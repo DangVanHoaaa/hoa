@@ -1,0 +1,15 @@
+extends ../../layouts/default.pug
+
+block main
+  .container.mt-4
+    .row
+      .col-md-4
+        img(src=book.image, alt=book.title, class="img-fluid border rounded")
+      .col-md-8
+        h1.mb-3= book.title
+        p.text-muted Tác giả: #{book.author}
+        p.text-danger.h4 Giá: #{book.price} đ
+        p.mt-3= book.description
+
+        form(action=`/cart/add/${book._id}`, method="post")
+          button.btn.btn-success.mt-3(type="submit") Thêm vào giỏ hàng

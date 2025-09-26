@@ -1,0 +1,32 @@
+header.mb-4
+  .bg-light.py-2.border-bottom
+    .container.d-flex.justify-content-between
+      span Hotline: 1900 6401
+      span.text-success Miễn phí giao hàng từ 250.000đ
+
+  .container.d-flex.align-items-center.py-3
+    a(href="/").mr-auto
+      img(src="/client/images/logo.png", alt="Vinabook Logo", height="40")
+
+    form.form-inline(action="/search", method="get")
+      input.form-control.mr-2(type="text", name="q", placeholder="Tìm sách, tác giả...")
+      button.btn.btn-outline-success(type="submit") Tìm kiếm
+
+    .ml-3
+      a.mr-3(href="/account/login") Đăng nhập
+      a.mr-3(href="/account/register") Đăng ký
+      a(href="/cart") Giỏ hàng (0)
+
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-success
+    .container
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav")
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item: a.nav-link(href="/") Trang chủ
+          li.nav-item: a.nav-link(href="/category/sach-moi") Sách mới
+          li.nav-item: a.nav-link(href="/category/van-hoc") Văn học
+          li.nav-item: a.nav-link(href="/category/kinh-te") Kinh tế
+          li.nav-item: a.nav-link(href="/category/thieu-nhi") Thiếu nhi
+          li.nav-item: a.nav-link(href="/category/ngoai-ngu") Ngoại ngữ
+          li.nav-item: a.nav-link(href="/category/ky-nang") Kỹ năng
